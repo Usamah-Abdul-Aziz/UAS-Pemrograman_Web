@@ -33,6 +33,7 @@ php artisan migrate:fresh
 php artisan db:seed --class=UsersSeeder
 php artisan db:seed --class=BlogsSeeder
 npm install
+icacls storage /grant "Everyone:F" /T /Q
 npm run dev
 npm run build
 php artisan serve
