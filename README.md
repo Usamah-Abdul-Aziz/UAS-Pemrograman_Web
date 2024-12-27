@@ -32,8 +32,9 @@ php artisan key:generate
 php artisan migrate:fresh
 php artisan db:seed --class=UsersSeeder
 php artisan db:seed --class=BlogsSeeder
-npm install
+php artisan sorage:link
 icacls storage /grant "Everyone:F" /T /Q
+npm install
 npm run dev
 npm run build
 php artisan serve
