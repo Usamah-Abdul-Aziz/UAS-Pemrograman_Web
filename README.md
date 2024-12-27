@@ -29,7 +29,9 @@ composer install
 npm install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate
+php artisan migrate:fresh
+php artisan db:seed --class=UsersSeeder
+php artisan db:seed --class=BlogsSeeder
 npm install
 npm run dev
 npm run build
