@@ -64,7 +64,7 @@
       <div class="lg:col-span-2">
         @foreach($blogs as $blog)
         <div class="bg-white rounded-lg shadow-xl overflow-hidden mb-8 hover:shadow-2xl transition duration-300">
-          <img src="{{ $blog->image_url }}" alt="{{ $blog->title }}" class="w-full h-56 object-cover"/>
+          <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" class="w-full h-56 object-cover"/>
           <div class="p-6">
             <h3 class="text-3xl font-semibold text-gray-800 hover:text-blue-600 transition duration-300">
               <a href="{{ route('blogs.show', $blog) }}">{{ $blog->title }}</a>
@@ -107,7 +107,7 @@
             <h4 class="text-xl font-semibold text-gray-800 mb-4">Popular Articles</h4>
             @foreach($blogs as $blog)
             <div class="flex space-x-4 mb-6">
-              <img src="{{ $blog->image_url }}" alt="{{ $blog->title }}" class="w-24 h-16 object-cover"/>
+              <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" class="w-24 h-16 object-cover"/>
               <div>
                 <h5 class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition duration-300">
                   <a href="{{ route('blogs.show', $blog) }}">{{ $blog->title }}</a>

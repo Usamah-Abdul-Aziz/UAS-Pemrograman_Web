@@ -2,9 +2,9 @@
 
     <div class="container">
         <!-- Logo dan Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-            <img src="{{ asset('public/img/UntirtaLogo.webp') }}" alt="logo" style="height: 30px; margin-right: 10px;">
-            <span>{{ config('app.name', 'Go-Blogs') }}</span>
+        <a class="navbar-brand d-flex align-items-center" href="{{ url('/blogs') }}">
+            <img src="{{ url('/img/UntirtaLogo.webp') }}" alt="logo" style="height: 30px; margin-right: 10px;">
+            <span>{{ config('app.name', 'KabarUntirta') }}</span>
         </a>
         
         <!-- Toggle button for mobile view -->
